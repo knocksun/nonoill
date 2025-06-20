@@ -3,4 +3,5 @@ pandas
 numpy
 matplotlib
 seaborn
-firebase_admin
+pyrebase4
+setuptools
