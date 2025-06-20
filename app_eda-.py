@@ -10,15 +10,12 @@ import io
 # ---------------------
 # Firebase 설정
 # ---------------------
-firebase_config = {
-    "apiKey": "AIzaSyCswFmrOGU3FyLYxwbNPTp7hvQxLfTPIZw",
-    "authDomain": "sw-projects-49798.firebaseapp.com",
-    "databaseURL": "https://sw-projects-49798-default-rtdb.firebaseio.com",
-    "projectId": "sw-projects-49798",
-    "storageBucket": "sw-projects-49798.firebasestorage.app",
-    "messagingSenderId": "812186368395",
-    "appId": "1:812186368395:web:be2f7291ce54396209d78e"
-}
+cred = credentials.Certificate("serviceAccountKey.json")
+
+# ✅ 딕셔너리(firebase_config)가 아니라 `cred`를 넘겨야 함
+firebase_admin.initialize_app(cred, {
+    'storageBucket': 'your-project-id.appspot.com'
+})
 
 firebase = firebase_admin.initialize_app(firebase_config)
 auth = firebase.auth()
