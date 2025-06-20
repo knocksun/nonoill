@@ -1,5 +1,6 @@
 import streamlit as st
-import pyrebase
+import firebase_admin
+from firebase_admin import credentials, firestore
 import time
 import pandas as pd
 import numpy as np
