@@ -3,5 +3,4 @@ pandas
 numpy
 matplotlib
 seaborn
-pyrebase4
-google-cloud-storage
+firebase-admin
