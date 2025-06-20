@@ -4,3 +4,4 @@ numpy
 matplotlib
 seaborn
 pyrebase4
+gcloud
